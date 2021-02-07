@@ -76,9 +76,9 @@ class LinkedList(object):
         right_list = copy.deepcopy(other)
 
         if left_list.head is None:
-            return left_list
-        if right_list.head is None:
             return right_list
+        if right_list.head is None:
+            return left_list
 
         left_list.end.next = right_list.head
         left_list.end = right_list.end
